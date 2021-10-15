@@ -1,0 +1,144 @@
+<?php include('tserver.php')?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>login</title>
+  <style>
+ .imgcontainer{
+  width:50%;
+     height:300%;
+  }
+  body {font-family:sans-serif;
+  background-color:blue;}
+
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 4px 4px;
+    display: inline-block;
+    box-sizing: boder-box;
+    background-color: black;
+}
+button {
+    background-color: black;
+    padding: 14px 20px;
+    margin: 4px 4px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.container {
+    padding: 50px;
+	text-align:center;
+	width:100%;
+}
+span.psw {
+    padding-top: 8px;
+}
+
+.nav {
+  padding:1%;
+  background-color:black;
+  min-height:5px;
+  
+}
+.navbar{
+ background-color:black;
+ }
+ .navbar-default {
+    background-color: black;
+    border-color:white;
+	}
+	.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+      .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+      
+      
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:black">
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:black;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="thome.html"><img class="imgcontainer" src="tlogo.png"></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="tlogin.php" style="color:black; background-color:#ddd;" ><span class="glyphicon glyphicon-log-in" style="color:black;"></span> Login</a></li>
+      <li><a href="tsignup.php" style="color:#ddd"><span class="glyphicon glyphicon-user" style="color:#ddd;"></span> Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+  <br>
+  <br>
+  <br>
+  <br>
+    
+  <div style="padding:50px; text-align:center; width:100%; background-color:black" class="container">
+  <img src="ni1.jpg" alt="Snow" style="width:100%">
+      <div class="btn">
+  <h1 style="text-align:center;color:#ddd" >Login</h1>
+      <form method="post" action="tlogin.php" bordercolor="#fff">
+      <?php include('errors.php'); ?>
+  <br>
+  <br>
+    <label for="username"></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+	<br>
+	<br>
+
+    <label for="password"></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+	<br>
+	<span class="psw" style="text-align:left"><a href="tforgot.php">Forgot password?</a></span>
+	<br>
+	<br>
+    <button type="submit" style="color:black; background-color:#ddd" name="login_user">Login</button>
+	<br>
+</form>
+    </div>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>tsignup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+       .imgcontainer{
+  width:50%;
+    height:300%;
+  }
+  body {font-family:sans-serif;
+  background-color:black;}
+  .nav {
+  padding:1%;
+  background-color:black;
+  min-height:5px;
+  
+}
+.nav {
+  padding:1%;
+  background-color:black;
+  min-height:5px;
+  
+}
+.navbar{
+ background-color:black;
+ }
+ .navbar-default {
+    background-color: black;
+    border-color:white;
+	}
+	.navbar {
+    box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+  body {font-family: sans-serif;}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    background: black;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+button {
+    background-color:#ddd;
+    color: black;
+    padding: 14px 20px;
+	margin:8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #ddd;
+}
+
+.cancelbtn, .signupbtn {
+  float: center-right;
+  width: 10%;
+  
+}
+.container-fluid{
+	text-align:center;
+}
+.navbar {
+    box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    
+}
+
+  </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:black;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="thome.html"><img class="imgcontainer" src="tlogo.png"></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="tlogin.html" style="color:#ddd;"><span class="glyphicon glyphicon-log-in" style="color:#ddd;"></span> Login</a></li>
+        <li class="active"><a href="tsignup.html" style="color:black; background-color:#ddd;" ><span class="glyphicon glyphicon-user" style="color:black;"></span> Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+    <br><br><br><br><br><br>
+    
+    
+<div class="container-fluid">
+    <h2 style="text-align:center;color:#ddd"><b>Create an account</b></h2>
+    <form method="post" action="tsignup.php">
+    <br>
+
+	<label for="username"></label>
+	<input type="text" placeholder="Enter Username" name="username">
+	<br>
+    
+		<label for="phone"></label>
+	<input type="text" placeholder="Enter phone number" name="phone">
+	<br>
+    <label for="email"></label>
+    <input type="text" placeholder="Enter Email" name="email">
+    <br>
+	
+    <label for="password1"></label>
+    <input type="password" placeholder="Enter Password" name="password1">
+    <br>
+    <label for="password2"></label>
+    <input type="password" placeholder="Confirm Password" name="password2">
+    <br>
+	<label for="answer"> 
+    Please select a secret question and enter an answer. (required) 
+</label> 
+
+<br /> 
+
+<select style="background-color:black;color:#ddd"> 
+    <option value="0">first school name?</option> 
+    <option value="1">your vehicle number?</option> 
+    <option value="2">what was your childhood nick name?</option> 
+</select> 
+<br>
+
+<input style="background-color:black" 
+       name="answer"
+       type="text"  
+       size="60" 
+       maxlength="60" /> 
+
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" name="reg_user">Sign Up</button>
+    </div>
+ 
+</form>
+ </div>
+</body>
+</html>
